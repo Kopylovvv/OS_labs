@@ -1,0 +1,5 @@
+build*/
+.DS_Store
+*.plist
+report/evidence/
+/run-commands.txt
