@@ -1,8 +1,0 @@
-n=5
-thread_limit=4
-threads=4
-tasks=20
-depth=2
-hold_seconds=2
-determinant=36
-seconds=2.041073918

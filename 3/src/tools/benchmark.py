@@ -10,7 +10,7 @@ from pathlib import Path
 parser = argparse.ArgumentParser()
 parser.add_argument('program')
 parser.add_argument('--docker', help='Run the program in this already-running container')
-parser.add_argument('--output', default='report')
+parser.add_argument('--output', default='/tmp/lab3-benchmark')
 parser.add_argument('--repeats', type=int, default=5)
 args = parser.parse_args()
 if args.repeats < 1:
@@ -45,7 +45,7 @@ for n in (5, 8, 10, 11):
     rng = random.Random(9000 + n)
     a = [[rng.choice((-3, -2, -1, 1, 2, 3)) for _ in range(n)] for _ in range(n)]
     text = str(n) + '\n' + '\n'.join(' '.join(map(str, row)) for row in a) + '\n'
-    (root / 'examples' / f'benchmark{n}.txt').write_text(text)
+    (root / 'src' / 'tests' / 'data' / f'benchmark{n}.txt').write_text(text)
     expected = exact_det(a)
     samples = {p: [] for p in (1, 2, 4, 8)}
     orders = []

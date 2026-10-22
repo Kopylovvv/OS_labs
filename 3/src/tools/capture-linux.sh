@@ -7,7 +7,7 @@ mkdir -p "$output"
 for threads in 1 2 4 8; do
     strace -f -s 128 -e trace=clone,clone3,futex,clock_nanosleep,exit,exit_group \
         -o "$output/strace-t$threads.txt" \
-        "$program" -t "$threads" -w 2 "$root/examples/matrix5.txt" \
+        "$program" -t "$threads" -w 2 "$root/src/tests/data/matrix5.txt" \
         > "$output/result-t$threads.txt" 2> "$output/ready-t$threads.txt" &
     tracer=$!
     tries=0

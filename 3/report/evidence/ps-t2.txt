@@ -1,3 +1,0 @@
-    PID     TID NLWP STAT COMMAND
-    829     829    2 Sl   determinant
-    829     832    2 Sl   determinant
