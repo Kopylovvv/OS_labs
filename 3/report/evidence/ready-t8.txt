@@ -1,0 +1,1 @@
+pid=912 threads=8 hold_seconds=2

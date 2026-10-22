@@ -1,0 +1,30 @@
+{
+  "sizes": [
+    5,
+    8,
+    10,
+    11
+  ],
+  "threads": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "depth": 2,
+  "repeats": 5,
+  "seed": "9000+n",
+  "entries": [
+    -3,
+    -2,
+    -1,
+    1,
+    2,
+    3
+  ],
+  "warmups_per_configuration": 1,
+  "timer": "CLOCK_MONOTONIC; preparation + allocation + create + compute + join + final sum",
+  "excluded": "input parsing, process startup, output, deallocation; no strace and no -w",
+  "execution": "sequential configurations; deterministic shuffled order per repeat",
+  "reference": "exact rational Gaussian elimination in benchmark driver only"
+}

@@ -1,0 +1,5 @@
+    PID     TID NLWP STAT COMMAND
+    866     866    4 Sl   determinant
+    866     870    4 Sl   determinant
+    866     871    4 Sl   determinant
+    866     872    4 Sl   determinant

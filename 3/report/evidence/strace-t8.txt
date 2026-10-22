@@ -1,0 +1,42 @@
+912   clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0xffff8049f270, parent_tid=0xffff8049f270, exit_signal=0, stack=0xffff7fc90000, stack_size=0x80ea60, tls=0xffff8049f8e0}, 88) = -1 ENOSYS (Function not implemented)
+912   clone(child_stack=0xffff8049ea60, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[915], tls=0xffff8049f8e0, child_tidptr=0xffff8049f270) = 915
+915   clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=2, tv_nsec=0},  <unfinished ...>
+912   clone(child_stack=0xffff7fc8ea60, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[916], tls=0xffff7fc8f8e0, child_tidptr=0xffff7fc8f270) = 916
+916   clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=2, tv_nsec=0},  <unfinished ...>
+912   clone(child_stack=0xffff7f47ea60, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[918], tls=0xffff7f47f8e0, child_tidptr=0xffff7f47f270) = 918
+918   clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=2, tv_nsec=0},  <unfinished ...>
+912   clone(child_stack=0xffff7ec6ea60, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[919], tls=0xffff7ec6f8e0, child_tidptr=0xffff7ec6f270) = 919
+919   clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=2, tv_nsec=0},  <unfinished ...>
+912   clone(child_stack=0xffff7e45ea60, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[921], tls=0xffff7e45f8e0, child_tidptr=0xffff7e45f270) = 921
+921   clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=2, tv_nsec=0},  <unfinished ...>
+912   clone(child_stack=0xffff7dc4ea60, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[922], tls=0xffff7dc4f8e0, child_tidptr=0xffff7dc4f270) = 922
+922   clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=2, tv_nsec=0},  <unfinished ...>
+912   clone(child_stack=0xffff7d43ea60, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[924], tls=0xffff7d43f8e0, child_tidptr=0xffff7d43f270) = 924
+924   clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=2, tv_nsec=0},  <unfinished ...>
+912   clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=2, tv_nsec=0},  <unfinished ...>
+915   <... clock_nanosleep resumed>0xffff8049e8a8) = 0
+915   exit(0)                           = ?
+915   +++ exited with 0 +++
+916   <... clock_nanosleep resumed>0xffff7fc8e8a8) = 0
+916   exit(0)                           = ?
+918   <... clock_nanosleep resumed>0xffff7f47e8a8) = 0
+916   +++ exited with 0 +++
+918   exit(0)                           = ?
+918   +++ exited with 0 +++
+919   <... clock_nanosleep resumed>0xffff7ec6e8a8) = 0
+919   exit(0)                           = ?
+921   <... clock_nanosleep resumed>0xffff7e45e8a8) = 0
+919   +++ exited with 0 +++
+921   exit(0)                           = ?
+921   +++ exited with 0 +++
+922   <... clock_nanosleep resumed>0xffff7dc4e8a8) = 0
+922   exit(0)                           = ?
+924   <... clock_nanosleep resumed>0xffff7d43e8a8) = 0
+922   +++ exited with 0 +++
+912   <... clock_nanosleep resumed>0xffffc0a5f7d8) = 0
+924   exit(0)                           = ?
+912   futex(0xffff7d43f270, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 924, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+924   +++ exited with 0 +++
+912   <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+912   exit_group(0)                     = ?
+912   +++ exited with 0 +++

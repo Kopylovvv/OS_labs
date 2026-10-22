@@ -1,0 +1,2 @@
+    PID     TID NLWP STAT COMMAND
+    797     797    1 S    determinant

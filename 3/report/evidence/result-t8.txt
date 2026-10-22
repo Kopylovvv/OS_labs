@@ -1,0 +1,8 @@
+n=5
+thread_limit=8
+threads=8
+tasks=20
+depth=2
+hold_seconds=2
+determinant=36
+seconds=2.078095084

@@ -1,0 +1,9 @@
+    PID     TID NLWP STAT COMMAND
+    912     912    8 Sl   determinant
+    912     915    8 Sl   determinant
+    912     916    8 Sl   determinant
+    912     918    8 Sl   determinant
+    912     919    8 Sl   determinant
+    912     921    8 Sl   determinant
+    912     922    8 Sl   determinant
+    912     924    8 Sl   determinant
